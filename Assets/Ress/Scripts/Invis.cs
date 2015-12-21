@@ -9,11 +9,17 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
 
     void Start()
     {
+        //subscribe to changes in invisibility state
         state.AddCallback("Invisible", OnInvis);
+
+        //subscribe to changes in health
         state.AddCallback("HP", OnHealthChange);
+
+        //update the invisibility state
         OnInvis();
     }
 
+    //When the invisibility state changes, update the tank
     void OnInvis()
     {
         if(state.Invisible)
@@ -26,26 +32,28 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
     }
 
     void InvisON() {
+        //Is this tank friendly on the local computer
         bool friendly = entity.IsFriendly();
 
         if (friendly) {
-
+            //set the alpha of all sprites
             foreach (SpriteRenderer spr in _Sprites) {
-                if(spr != null)
-                    spr.color = SetAlpha(spr.color, localInvisAlpha);
+                spr.color = SetAlpha(spr.color, localInvisAlpha);
             }
 
+            //set the alpha of all particle systems
             foreach (ParticleSystem ps in _Particles) {
-                if(ps != null)
-                    ps.startColor = SetAlpha(ps.startColor, localInvisAlpha);
+                ps.startColor = SetAlpha(ps.startColor, localInvisAlpha);
             }
 
         } else {
 
+            //set the alpha of all sprites to 0
             foreach (SpriteRenderer spr in _Sprites) {
                 spr.color = SetAlpha(spr.color, 0);
             }
 
+            //set the alpha of all particle systems to 0
             foreach (ParticleSystem ps in _Particles) {
                 ps.Stop();
             }
@@ -54,16 +62,18 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
 
 	void InvisOFF() {
 
+        //restore alpha for all sprites to full
 		foreach(SpriteRenderer spr in _Sprites) {
-            if (spr != null)
-                spr.color = SetAlpha(spr.color, 1);
+            spr.color = SetAlpha(spr.color, 1);
 		}
 		
+        //restore alpha for all particle systesm to full
 		foreach(ParticleSystem ps in _Particles) {
-            if (ps != null)
-                ps.startColor = SetAlpha(ps.startColor, 1);
+            ps.startColor = SetAlpha(ps.startColor, 1);
 		}
 		
+
+        //resume playing all particle systems (in case they were stopped when the tank went invisible)
 		foreach(ParticleSystem ps in _Particles) {
 			ps.Play();
 		}
@@ -71,12 +81,14 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
 
     void OnHealthChange()
     {
+        //If the tank is dead, become visible again
         if(state.HP == 0 && entity.isOwner)
         {
             state.Invisible = false;
         }
     }
 
+    //returns a new color with the alpha changed from the original color
 	Color SetAlpha(Color cIn, float alpha) {
 		return new Color(cIn.r, cIn.b, cIn.g, alpha);
 	}
