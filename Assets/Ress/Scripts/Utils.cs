@@ -66,22 +66,6 @@ public class Utils : MonoBehaviour {
 		return players;
 	}
 
-	public static string GetGameMode(string mapName) {
-		foreach (string map in Constants.VanillaMaps) {
-			if(map == mapName) return "Vanilla";
-		}
-
-		foreach (string map in Constants.CTFMaps) {
-			if(map == mapName) return "CTF";
-		}
-			
-		foreach (string map in Constants.CNQMaps) {
-			if(map == mapName) return "CNQ";
-		}
-			
-		return "Vanilla";
-	}
-
 	public static string GetRandomName() {
 		string[] randNames = new string[20] {"( ͡° ͜ʖ ͡°)", 
 			"( ͠° ͟ʖ ͡°)", 
