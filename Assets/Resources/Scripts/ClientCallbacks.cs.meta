@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e1d7bf40f4d6ddd4cae35e9c67cb8207
+timeCreated: 1432841206
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bulletTrailPrefab: {fileID: 127472, guid: a1dd9733c066d3d4fb0675942ca99c1b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

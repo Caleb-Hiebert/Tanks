@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: dfd7e900bc3a2e44a96d7fda9acd8980
+timeCreated: 1450198799
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JunglePlant_Leaf1
+    21300002: JunglePlant_Leaf2
+    21300004: JunglePlant_Flower1
+    21300006: JunglePlant_Flower2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: JunglePlant_Leaf1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 16
+        width: 81
+        height: 237
+      alignment: 9
+      pivot: {x: .627696693, y: .0853897631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: JunglePlant_Leaf2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 13
+        width: 97
+        height: 236
+      alignment: 9
+      pivot: {x: .480612069, y: .143398538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: JunglePlant_Flower1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 200
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: JunglePlant_Flower2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 10
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

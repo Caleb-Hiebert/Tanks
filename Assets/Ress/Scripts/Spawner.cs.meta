@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4573a347f042aff4bba239eb7dfe095f
+timeCreated: 1432672268
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - spectatorCamera: {instanceID: 0}
+  - spectatorCameraPosition: {instanceID: 0}
+  - uControl: {instanceID: 0}
+  - deathRecapPrefab: {fileID: 164722, guid: 7b08dc05694b92249b53e56139cc3901, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

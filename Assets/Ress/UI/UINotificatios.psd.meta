@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 4f8b6246d4834dc43828d2382f3c088a
+timeCreated: 1435555049
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mid_REKT
+    21300002: Mid_PWND
+    21300004: Mid_X2
+    21300006: Mid_X3
+    21300008: Mid_X4
+    21300010: Mid_X5
+    21300012: Mid_X6
+    21300014: Mid_X7
+    21300016: Mid_X8
+    21300018: Panel_Side
+    21300020: Panel_Mid
+    21300022: Mid_Executed
+    21300024: Mid_Drop
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mid_REKT
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 153
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_PWND
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 155
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 152
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 152
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X5
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 152
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X6
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 153
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X7
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 154
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_X8
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 152
+        width: 92
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Panel_Side
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7
+        width: 451
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Panel_Mid
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 7
+        width: 124
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_Executed
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 59
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_Drop
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 60
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
