@@ -12,7 +12,7 @@ public static class Extensions
 
     public static GameObject GetRandom(this List<GameObject> source)
     {
-        return source[UnityEngine.Random.Range(0, source.Count)];
+        return source[Random.Range(0, source.Count)];
     }
 
     public static Quaternion LookAt2D(this Transform t, Vector3 target)

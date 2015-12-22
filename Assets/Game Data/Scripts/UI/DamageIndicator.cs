@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class DamageIndicator : MonoBehaviour {
@@ -37,7 +37,7 @@ public class DamageIndicator : MonoBehaviour {
 		}
 
 		if (diPrefab == null) {
-			diPrefab = (GameObject)Resources.Load("LocalPrefabs/DamageIndicator");
+            diPrefab = GeneralData.data.gameObjects.Get("DamageIndicator");
 		}
 		
 		GameObject di = Instantiate (diPrefab, pos, Quaternion.identity) as GameObject;
