@@ -208,7 +208,10 @@ public class PlayerController : Bolt.EntityEventListener<IPlayer> {
         }
 
         if (tankUI == null)
+        {
             tankUI = gameObject.AddComponent<T>();
+            ResetAbilityStates();
+        }
     }
 
     void Update()
@@ -408,6 +411,22 @@ public class PlayerController : Bolt.EntityEventListener<IPlayer> {
     {
         PlayerRegistry.connectedPlayers.Remove(state);
         PlayerRegistry.connectedEntities.Remove(entity);
+    }
+
+    void ResetAbilityStates()
+    {
+        if (!entity.isOwner)
+            return;
+
+        foreach (var item in state.Abilities)
+        {
+            item.Boolean1 = false;
+            item.Boolean2 = false;
+            item.Integer1 = 0;
+            item.Integer2 = 0;
+            item.Cooldown = 0;
+            item.Float1 = 0;
+        }
     }
 }
 

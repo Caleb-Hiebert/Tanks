@@ -15,8 +15,10 @@ public class HammerheadGrapple : ExtendableAbility {
 
     void Update()
     {
+        //if we are the client
         if(entity.hasControl)
         {
+            //if we click the mouse & our grapple cooldown is 0 send an ability code to the server and play a sound
             if(InputHandler.GetMouseDown(0) && state.Abilities[0].Cooldown == 0)
             {
                 SendAbility(0);
@@ -24,6 +26,8 @@ public class HammerheadGrapple : ExtendableAbility {
             }
         }
 
+        //runs on client and server
+        //if the grappling hook is not active, and the cooldown is 0, show the hook on the tank, else dont
         if (!state.Abilities[0].Boolean1 && state.Abilities[0].Cooldown == 0)
         {
             grappleHook.SetActive(true);
@@ -122,5 +126,8 @@ public class HammerheadGrapple : ExtendableAbility {
         {
             BoltNetwork.Destroy(activeHook);
         }
+
+        if (entity.isAttached && entity.isOwner)
+            state.Abilities[0].Boolean1 = false;
     }
 }

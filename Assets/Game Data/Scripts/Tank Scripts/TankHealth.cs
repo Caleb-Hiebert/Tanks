@@ -28,7 +28,8 @@ public class TankHealth : Bolt.EntityBehaviour<IPlayer> {
         {
             amount = (int)(amount * player.GetState<IPlayer>().Powerups.DamageModifier);
 
-            player.GetState<IPlayer>().Stats.DamageDealt += amount;
+            if(BoltNetwork.isServer)
+                player.GetState<IPlayer>().Stats.DamageDealt += amount;
         }
 
         damageLog.Add(new HealthChange(player, -amount));

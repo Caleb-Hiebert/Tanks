@@ -50,6 +50,7 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
 
             //set the alpha of all sprites to 0
             foreach (SpriteRenderer spr in _Sprites) {
+                Debug.LogWarning(spr);
                 spr.color = SetAlpha(spr.color, 0);
             }
 
@@ -86,6 +87,13 @@ public class Invis : Bolt.EntityBehaviour<IPlayer> {
         {
             state.Invisible = false;
         }
+    }
+
+    void OnDestroy()
+    {
+        InvisOFF();
+        _Sprites = new SpriteRenderer[0];
+        _Particles = new ParticleSystem[0];
     }
 
     //returns a new color with the alpha changed from the original color

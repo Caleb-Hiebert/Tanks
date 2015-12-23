@@ -44,11 +44,8 @@ public class HookController : Bolt.EntityBehaviour<IGrappleState> {
 	}
 	
 	void Update () {
-
-        if (owner == null && entity.isOwner)
-        {
-            BoltNetwork.Destroy(gameObject);
-        }
+        if (owner == null)
+            return;
 
         if(hitEntity)
         {
